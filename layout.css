@@ -1,0 +1,59 @@
+/* Reset some default margin and padding for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.banner{
+    width: 100%;
+    text-align: center;
+    font-size: 4em;
+}
+/* Define the container for the columns */
+.container {
+    display: flex;
+    justify-content: space-between; /* Distribute columns equally */
+    max-width: 1200px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Style the individual columns */
+.column {
+    text-align: center;
+    width: 60%; /* Set the width of each column */
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    margin: 5px;
+}
+
+.column-left {
+    text-align: center;
+    width: 20%; /* Set the width of each column */
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    margin: 5px;
+}
+.column-right {
+    text-align: center;
+    width: 20%; /* Set the width of each column */
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    margin: 5px;
+}
+
+/* Media query for responsiveness - you can adjust this as needed */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack columns on smaller screens */
+    }
+    .column {
+        width: 100%; /* Take up the full width on smaller screens */
+    }
+}

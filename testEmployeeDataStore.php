@@ -5,12 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" >
+    <link rel="stylesheet" href="layout.css" >
     <title>Document</title>
 </head>
 <body>
     <h3>Test Data Store</h3>
 
-    <?php
+
+    <div class="container">
+        <div class="column-left">Plceholder Left</div>
+        <div class="column">
+
+
+        <?php
      include "dataStore/EmployeeDataStore.php";
      $empDS = new EmployeeDataStore("data.txt");
 
@@ -29,6 +36,14 @@
      }
 
     ?>
+
+
+        </div>
+        <div class="column-right">Placeholder Right</div>
+        
+    </div>
+
+    
     
 </body>
 </html>

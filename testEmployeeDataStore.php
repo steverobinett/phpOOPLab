@@ -24,13 +24,13 @@
 
             while ((($rec = $empDS->getNext()) != NULL)) {
 
-                // for($i=0; $i < count($rec); ++$i){
-                //     echo "$rec[$i] --";
-                // }
-
-                foreach ($rec as $field) {
-                    echo "$field --";
+                for($i=0; $i < count($rec); ++$i){
+                    echo "$rec[$i] --";
                 }
+
+                // foreach ($rec as $field) {
+                //     echo "$field --";
+                // }
 
                 echo "<br />";
             }

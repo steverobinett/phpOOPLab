@@ -7,7 +7,7 @@ class EmployeeDataStore {
     function __construct($fname){
         $this->fp = fopen($fname, "r");
     }
-
+    //returns an array
     function getnext(){
         if(!feof($this->fp)){
           $this->buffer = fgets($this->fp);

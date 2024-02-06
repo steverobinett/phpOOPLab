@@ -54,7 +54,7 @@
         $a->withdrawl(1000.0);
         echo $a->getBalance()."<br />";
 
-        $a->balance = 0;
+        // $a->balance = 0;
         echo $a->getBalance()."<br />";
 
     ?>

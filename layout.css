@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+h3{
+    text-align: center;
+    margin-bottom: 3em;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
